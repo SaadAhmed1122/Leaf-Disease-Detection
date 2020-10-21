@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+
+        <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+
+        <item
+                android:id="@+id/analyse"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Analyse" />
+
+        <item
+                android:id="@+id/beneficial_insects"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Beneficial Insects" />
+
+        <item
+                android:id="@+id/garden_pests"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Garden Pests" />
+
+        <item
+                android:id="@+id/Household_Pests"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Household Pests" />
+
+        <item
+                android:id="@+id/Houseplant_Pests"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Houseplant Pests" />
+
+        <item
+                android:id="@+id/plant_disease"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Plant Disease" />
+
+        <item
+                android:id="@+id/about_us"
+                android:icon="@mipmap/ic_launcher"
+                android:title="About Us" />
+
+        <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+    </group>
+
+</menu>
