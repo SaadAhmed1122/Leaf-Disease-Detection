@@ -87,6 +87,12 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        dl.closeDrawers();
+        super.onBackPressed();
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (t.onOptionsItemSelected(item))

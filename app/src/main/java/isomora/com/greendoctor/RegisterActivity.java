@@ -3,6 +3,8 @@ package isomora.com.greendoctor;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
@@ -27,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     String id;
     CheckBox show_password;
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
         edt_name = findViewById(R.id.edt_name);
         mAuth = FirebaseAuth.getInstance();
         show_password = findViewById(R.id.show_password);
+        pd = new ProgressDialog(this);
 
         show_password.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -54,6 +58,10 @@ public class RegisterActivity extends AppCompatActivity {
         btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                pd.setMessage("Please wait ...");
+                pd.show();
+
                 name = edt_name.getText().toString().trim();
                 email = edt_email.getText().toString().trim();
                 password = edt_password.getText().toString().trim();
@@ -67,15 +75,19 @@ public class RegisterActivity extends AppCompatActivity {
                                 Model model = new Model(name, email, password, id);
                                 DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Users");
                                 mRef.child(id).setValue(model);
-                                Toast.makeText(RegisterActivity.this, "Data Saved!", Toast.LENGTH_SHORT).show();
-
+                                Toast.makeText(RegisterActivity.this, "Signed up successfully!", Toast.LENGTH_SHORT).show();
+                                pd.dismiss();
+                                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                                finish();
                             } else {
+                                pd.dismiss();
                                 String message = task.getException().getMessage();
                                 Toast.makeText(RegisterActivity.this, "" + message, Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
                 } else {
+                    pd.dismiss();
                     Toast.makeText(RegisterActivity.this, "Empty Field!", Toast.LENGTH_SHORT).show();
                 }
             }

@@ -10,37 +10,37 @@
 
         <item
                 android:id="@+id/analyse"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@mipmap/analyse"
                 android:title="Analyse" />
 
         <item
                 android:id="@+id/beneficial_insects"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@mipmap/agr1"
                 android:title="Beneficial Insects" />
 
         <item
                 android:id="@+id/garden_pests"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@mipmap/agr2"
                 android:title="Garden Pests" />
 
         <item
                 android:id="@+id/Household_Pests"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@mipmap/agr3"
                 android:title="Household Pests" />
 
         <item
                 android:id="@+id/Houseplant_Pests"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@mipmap/agr4"
                 android:title="Houseplant Pests" />
 
         <item
                 android:id="@+id/plant_disease"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@mipmap/agr5"
                 android:title="Plant Disease" />
 
         <item
                 android:id="@+id/about_us"
-                android:icon="@mipmap/ic_launcher"
+                android:icon="@drawable/ic_about"
                 android:title="About Us" />
 
         <item

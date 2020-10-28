@@ -3,6 +3,7 @@ package isomora.com.greendoctor;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
@@ -24,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     String email, password;
     CheckBox show_password;
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         edt_password = findViewById(R.id.edt_password);
         mAuth = FirebaseAuth.getInstance();
         show_password = findViewById(R.id.show_password);
+        pd = new ProgressDialog(this);
 
         show_password.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -59,6 +62,8 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                pd.setMessage("Please wait ...");
+                pd.show();
 
                 email = edt_email.getText().toString().trim();
                 password = edt_password.getText().toString().trim();
@@ -67,9 +72,12 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this, "Login Successfully!", Toast.LENGTH_SHORT).show();
+                            pd.dismiss();
                             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                             finish();
                         } else {
+                            pd.dismiss();
                             String message = task.getException().toString();
                             Toast.makeText(LoginActivity.this, "" + message, Toast.LENGTH_SHORT).show();
                         }
