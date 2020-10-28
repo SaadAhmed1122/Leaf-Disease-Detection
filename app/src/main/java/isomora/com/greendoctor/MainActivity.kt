@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
         mDetectButton.setOnClickListener {
                 val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
                 mResultTextView.text= results?.title+"\n Confidence:"+results?.confidence
-
         }
     }
 
