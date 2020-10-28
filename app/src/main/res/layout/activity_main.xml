@@ -49,14 +49,6 @@
                     android:textColor="@android:color/white" />
 
             <Button
-                    android:id="@+id/mDetectButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/button_border"
-                    android:text="@string/buttonDiagnose" />
-
-            <Button
                     android:id="@+id/mGalleryButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -67,12 +59,22 @@
 
         </LinearLayout>
 
+        <Button
+                android:id="@+id/mDetectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_border"
+                android:text="@string/buttonDiagnose"
+                android:layout_below="@+id/layout1"/>
+
         <TextView
                 android:layout_marginBottom="20dp"
                 android:id="@+id/mResultTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout1"
+                android:layout_below="@+id/mDetectButton"
                 android:layout_centerInParent="true"
                 android:layout_margin="20dp"
                 android:text="@string/defaultImage"

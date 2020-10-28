@@ -26,14 +26,25 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/aphid" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Aphid Parasite"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="These tiny, parasitic wasps lay their eggs inside aphids causing them to mummify and die." />
 
             </RelativeLayout>
 
@@ -54,14 +65,25 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/bumblee" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Bumblebee"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="In comparison with other pollinating insects like honeybees, bumblebees are very effective pollinators." />
 
             </RelativeLayout>
 
@@ -82,14 +104,25 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/predator" />
 
                 <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Fly Predator"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="These small, harmless (to humans and animals) beneficial insects attack and kill flies when the pest is in its immature pupal stage." />
 
             </RelativeLayout>
 
@@ -110,14 +143,25 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/lady" />
 
                 <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Lady Beetle"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="Ladybugs, or lady beetles (Hippodamia convergens) are the best known garden predators available. Learn more about them here." />
 
             </RelativeLayout>
 
@@ -138,14 +182,25 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/wasp_egg" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Moth Egg Parasite"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="This tiny parasitic wasp is an effective biological control agent because it kills its host before a plant can be damaged." />
 
             </RelativeLayout>
 

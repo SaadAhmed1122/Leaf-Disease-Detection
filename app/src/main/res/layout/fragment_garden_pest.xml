@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".FragmentGardenPest">
 
     <LinearLayout
@@ -12,11 +12,11 @@
             android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-                app:cardCornerRadius="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:elevation="16dp">
+                android:elevation="16dp"
+                app:cardCornerRadius="8dp">
 
             <RelativeLayout
                     android:layout_width="match_parent"
@@ -26,25 +26,38 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ant" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Ant"
+                        android:id="@+id/title"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
+                        android:layout_below="@+id/title"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="As a group, ants are important natural predators of many insect pests including flea and fly larvae, caterpillars and termites." />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-                app:cardCornerRadius="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:elevation="16dp">
+                android:elevation="16dp"
+                app:cardCornerRadius="8dp">
 
             <RelativeLayout
                     android:layout_width="match_parent"
@@ -54,25 +67,38 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/army_worm" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:id="@+id/title"
+                        android:text="Armyworm"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
+                        android:layout_below="@+id/title"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="This destructive garden pest gets its name because it travels in small insect armies and consumes just about everything in its path." />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-                app:cardCornerRadius="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:elevation="16dp">
+                android:elevation="16dp"
+                app:cardCornerRadius="8dp">
 
             <RelativeLayout
                     android:layout_width="match_parent"
@@ -82,25 +108,36 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/bean_beetle" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Bean Beetle"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="Proven, natural and organic methods to get rid of bean beetles in home vegetable gardens." />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-                app:cardCornerRadius="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:elevation="16dp">
+                android:elevation="16dp"
+                app:cardCornerRadius="8dp">
 
             <RelativeLayout
                     android:layout_width="match_parent"
@@ -110,25 +147,38 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/cabage" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Cabbage Worm"
+                        android:id="@+id/title"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_below="@+id/title"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="These velvety green caterpillars can quickly devour brassica crops in home and market gardens." />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-                app:cardCornerRadius="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:elevation="16dp">
+                android:elevation="16dp"
+                app:cardCornerRadius="8dp">
 
             <RelativeLayout
                     android:layout_width="match_parent"
@@ -138,14 +188,27 @@
                         android:id="@+id/img_1"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/leaf_hopper" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/img_1"
+                        android:text="Leafhopper"
+                        android:id="@+id/title"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_below="@+id/title"
                         android:layout_centerVertical="true"
                         android:layout_toRightOf="@id/img_1"
-                        android:text="Description" />
+                        android:text="Learn how to identify and get rid of leafhoppers using time-tested, natural and organic techniques." />
 
             </RelativeLayout>
 

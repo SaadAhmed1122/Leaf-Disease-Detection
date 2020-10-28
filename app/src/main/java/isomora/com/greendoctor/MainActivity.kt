@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     private val mLabelPath = "plant_labels.txt"
     private val mSamplePath = "soybean.JPG"
 
-
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -9,4 +9,5 @@
     <string name="Close">Close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">Plant diseases causes many significant damages and losses in crops around the world. Some appropriate measures should be introduced on identification of plant disease to prevent damages and minimize losses. Early Detection of Disease helps in increasing the productivity of crop as well as in minimizing expense. Technical approaches using machine learning and computer vision are actively researched to achieve intelligence farming by early detection on plant disease.</string>
 </resources>
