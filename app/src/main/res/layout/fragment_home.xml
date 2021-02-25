@@ -8,6 +8,6 @@
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/crop" />
+            android:src="@drawable/clud_root" />
 
 </RelativeLayout>

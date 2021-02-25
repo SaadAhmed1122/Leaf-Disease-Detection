@@ -67,10 +67,9 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.home:
                         replaceFragment(new HomeFragment());
                         break;
-                    case R.id.logout:
-                        FirebaseAuth.getInstance().signOut();
-                        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-                        finish();
+                    case R.id.conditions:
+                      replaceFragment(new FragmentCondition());
+
                         break;
                 }
                 dl.closeDrawers();

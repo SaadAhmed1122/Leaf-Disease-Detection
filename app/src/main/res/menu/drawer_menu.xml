@@ -39,14 +39,15 @@
                 android:title="Plant Disease" />
 
         <item
+                android:id="@+id/conditions"
+                android:icon="@drawable/conditon"
+                android:title="Leaf Example" />
+        <item
                 android:id="@+id/about_us"
                 android:icon="@drawable/ic_about"
                 android:title="About Us" />
 
-        <item
-                android:id="@+id/logout"
-                android:icon="@drawable/ic_logout"
-                android:title="Logout" />
+
     </group>
 
 </menu>
