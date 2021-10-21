@@ -135,14 +135,14 @@
                     <TextView
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:text="Anousha Malik"
+                            android:text=""
                             android:textSize="16sp" />
 
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
-                            android:text="17BSCS(04)"
+                            android:text=""
                             android:textSize="16sp" />
 
                 </LinearLayout>
@@ -159,14 +159,14 @@
                     <TextView
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:text="Aisha Rajput"
+                            android:text=""
                             android:textSize="16sp" />
 
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
-                            android:text="17BSCS(73)"
+                            android:text=""
                             android:textSize="16sp" />
 
                 </LinearLayout>
@@ -181,14 +181,14 @@
                     <TextView
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:text="Ghulam Mustafa"
+                            android:text=""
                             android:textSize="16sp" />
 
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"
-                            android:text="17BSCS(60)"
+                            android:text=""
                             android:textSize="16sp" />
 
                 </LinearLayout>
